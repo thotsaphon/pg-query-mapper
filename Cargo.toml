@@ -2,6 +2,13 @@
 name = "pg-query-mapper"
 version = "0.1.0"
 edition = "2021"
+description = "A high-performance zero-overhead procedural macro mapping tokio-postgres Rows using pre-computed column indices"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/thotsaphon/pg-query-mapper"
+keywords = ["postgres", "tokio-postgres", "orm", "macro", "mapper"]
+categories = ["database", "rust-patterns", "development-tools::procedural-macros"]
+
 
 [dependencies]
 pg-query-mapper-derive = { path = "./pg-query-mapper-derive", version = "0.1.0" }

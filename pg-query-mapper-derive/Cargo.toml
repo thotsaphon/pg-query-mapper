@@ -2,6 +2,10 @@
 name = "pg-query-mapper-derive"
 version = "0.1.0"
 edition = "2021"
+description = "Procedural macro backend for the pg-query-mapper crate"
+license = "MIT"
+repository = "https://github.com/thotsaphon/pg-query-mapper"
+
 
 [lib]
 proc-macro = true
