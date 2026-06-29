@@ -24,9 +24,23 @@ Add `pg-query-mapper` to your `Cargo.toml`:
 [dependencies]
 pg-query-mapper = "0.1.0"
 tokio-postgres = { version = "0.7", features = ["with-serde_json-1"] }
-optional-field = { git = "https://github.com/thotsaphon/optional-field", branch = "next" } # For optional fields
 serde = { version = "1.0", features = ["derive"] } # For JSON mapping
+# Use the stable version from crates.io
+optional-field = "0.1" # For optional fields
 ```
+
+**Using the Extended Feature (Postgres & Display)**
+
+If you need the extended features (Postgres FromSql/ToSql support and Display implementation for Field<T>), you can use the development branch from my fork:
+```toml
+[dependencies]
+# ... other dependencies
+optional-field = { git = "https://github.com/thotsaphon/optional-field", branch = "next" }
+```
+**Features provided by this branch:**
+
+*   **Postgres Support**: Implements `postgres_types::FromSql` and `ToSql` for `Field<T>`, allowing seamless integration with tokio-postgres rows (e.g., `row.get::<_, Field<Uuid>>(0)`).
+*   **Logging**: Implements `std::fmt::Display` for `Field<T>` to make debugging and logging easier.
 
 ---
 
