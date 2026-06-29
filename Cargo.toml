@@ -11,7 +11,7 @@ keywords = ["postgres", "tokio-postgres", "orm", "macro", "mapper"]
 categories = [
     "database",
     "rust-patterns",
-    "development-tools::procedural-macros",
+    "development-tools::procedural-macro-helpers",
 ]
 
 
