@@ -1,6 +1,7 @@
 [package]
 name = "pg-query-mapper-derive"
 version = "0.1.0"
+authors = ["Thotsaphon Chaiyachat <vetkub@gmail.com>"]
 edition = "2021"
 description = "Procedural macro backend for the pg-query-mapper crate"
 license = "MIT"
