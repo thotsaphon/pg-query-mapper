@@ -139,4 +139,4 @@ When performing a `LEFT JOIN` on a table mapped via a flattened property wrapped
 
 ## 📄 License
 
-This project is licensed under the [MIT License](file:///mnt/HiK/Workspaces/pg-query-mapper/LICENSE.md).
+This project is licensed under the [MIT License](https://github.com/thotsaphon/pg-query-mapper/blob/main/LICENSE.md).
