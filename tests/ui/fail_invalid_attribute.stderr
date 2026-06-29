@@ -1,0 +1,5 @@
+error: unsupported struct attribute for pg_mapper
+ --> tests/ui/fail_invalid_attribute.rs:4:13
+  |
+4 | #[pg_mapper(unknown_magic_word)] // This is invalid at struct level
+  |             ^^^^^^^^^^^^^^^^^^
